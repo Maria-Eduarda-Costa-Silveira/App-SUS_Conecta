@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+/* Reset Padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Nunito", serif;
+}
+
+a {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Corpo */
+body {
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Login */
+#body-log {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #ffffff;
+}
+
+.container {
+    max-width: 400px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+.title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.subtitle {
+    font-size: 16px;
+    color: gray;
+    margin-bottom: 20px;
+}
+
+.input-field {
+    width: 100%;
+    max-width: 300px;
+    padding: 12px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 8px;
+    background-color: #f2f3f5;
+    font-size: 16px;
+    outline: none;
+}
+
+#btn-log, #update {
+    width: 100%;
+    max-width: 300px;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background: linear-gradient(to right, #00aaff, #00ccff);
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+#btn-log, #update:hover {
+    background: linear-gradient(to right, #0099dd, #00bbee);
+}
+
+.register-text {
+    margin-top: 10px;
+}
+
+/* Cabeçalho */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.user-greeting {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.profile-icon {
+    width: 30px;
+}
+
+/* Dashboard */
+.service-container {
+    width: 600px;
+    margin: 0 auto;
+}
+
+.service {
+    background-color: #E3F2FD;
+    padding: 15px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+.service img {
+    width: 40px;
+}
+
+/* Tabela Receitas */
+.table-container {
+    width: 600px;
+    margin: 0 auto;
+}
+
+.table-header {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    padding: 10px 0;
+}
+
+.column-title {
+    font-weight: bold;
+}
+
+.table-row {
+    display: flex;
+    justify-content: space-between;
+    background-color: #f8f9fa;
+    padding: 10px;
+    border-radius: 8px;
+    margin-top: 8px;
+}
+
+.table-cell {
+    font-size: 14px;
+}
+
+
+.btn {
+    background-color: #E3F2FD;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    color: #007BFF;
+    cursor: pointer;
+}
+
+/* Botão de Cancelar */
+.btn-cancelar {
+    background-color: #ffcccc;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    color: #D32F2F;
+    cursor: pointer;
+}
+
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.nav-icon {
+    width: 20px;
+    height: 20px;
+}
+
+/* Gênero */
+.gender-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 10px 0;
+}
+
+.gender-container label {
+    font-size: 14px;
+}
+
+/* Estilização das abas */
+.tabs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.tab-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+    margin: 0 5px;
+}
+
+.tab-button.active {
+    background-color: #cce5ff;
+    color: #007BFF;
+}
+
+.tab-button:not(.active) {
+    background-color: #e0e0e0;
+    color: #666;
+}
