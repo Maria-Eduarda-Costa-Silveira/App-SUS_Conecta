@@ -46,7 +46,7 @@
             <button type="submit" name="submit" id="btn-log">Entrar</button>
         </form>
 
-        <p class="register-text">Ainda não tem conta? <a href="cadastro.html">Cadastre-se</a></p>
+        <p class="register-text">Ainda não tem conta? <a href="cadastro.php">Cadastre-se</a></p>
     </div>
 </body>
 </html>
