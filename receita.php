@@ -39,7 +39,7 @@
     <div class="table-container">
         <div class="table-header">
             <span class="column-title">Data</span>
-            <span class="column-title">Exame</span>
+            <span class="column-title">Doutor(a)</span>
             <span class="column-title"></span>
         </div>
         <?php
