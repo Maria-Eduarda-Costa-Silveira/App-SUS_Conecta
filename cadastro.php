@@ -60,7 +60,7 @@
             <button type="submit" name= "submit" id="btn-log">Cadastrar</button>
         </form>
 
-        <p class="register-text">Já tem uma conta? <a href="Login.html">Faça login</a></p>
+        <p class="register-text">Já tem uma conta? <a href="Login.php">Faça login</a></p>
     </div>
 </body>
 </html>
