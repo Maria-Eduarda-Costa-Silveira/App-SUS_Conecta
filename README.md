@@ -13,6 +13,14 @@ Na primeira etapa deste projeto realizamos a prototipação do sistema e também
 
 Dessa forma, baseado na descrição acima e no protótipo que desenvolvemos, podemos afirmar que o sistema desenvolvido **atende a etapa anterior com sucesso** sem que fosse preciso adicionar novas features ou retirar quaisquer funcionalidades idealizadas na primeira etapa.
 
+## 2. Front-end
+
+O front-end foi desenvolvido utilizando HTML para a estrutura da página e CSS para a estilização. Isso garante uma interface visualmente agradável e responsiva para o usuário.
+
+## 3. Back-end 
+
+O back-end foi construído com PHP, uma linguagem de programação server-side amplamente utilizada para desenvolvimento web. O PHP é responsável por processar os dados, interagir com o banco de dados (se houver) e gerar o conteúdo dinâmico da aplicação.
+
 ## 4. Criação do Banco de Dados
 
 ### 1. Instalando o MySQL
