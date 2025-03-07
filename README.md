@@ -2,6 +2,7 @@
 
 ## [Clique aqui](https://www.youtube.com/watch?v=ukg6h2oIvyk) para acessar o vídeo de demonstração do Sistema
 
+## 1. Contextualização
 Na primeira etapa deste projeto realizamos a prototipação do sistema e também a criação das personas e das jornadas de usuário correspondentes a cada uma delas. Como grupo, optamos por desenvolver a jornada dos pacientes que são exemplificadas através da seguinte persona:
 
 - **Maria da Silva**
@@ -15,13 +16,14 @@ Dessa forma, baseado na descrição acima e no protótipo que desenvolvemos, pod
 
 ## 2. Front-end
 
-O front-end foi desenvolvido utilizando HTML para a estrutura da página e CSS para a estilização. Isso garante uma interface visualmente agradável e responsiva para o usuário.
+Seguindo o design construído na primeira etpa através do Figma, o front-end foi desenvolvido utilizando HTML para a estrutura da página e CSS para a estilização. Garantindo uma interface visualmente agradável e responsiva para o usuário.
 
 ## 3. Back-end 
 
-O back-end foi construído com PHP, uma linguagem de programação server-side amplamente utilizada para desenvolvimento web. O PHP é responsável por processar os dados, interagir com o banco de dados (se houver) e gerar o conteúdo dinâmico da aplicação.
+O back-end foi construído com PHP, pois foi a linguagem de programação que o grupo se sentiu mais confortável em utulizar. O PHP é responsável por processar os dados e interagir com o banco de dados, enviando os dados fornecidos pelos usuários no cadastro para o BD e "chamando" esses dados quando uma seção é iniciada.
 
 ## 4. Criação do Banco de Dados
+O Banco de Dados que armazena e envia os dados dos pacientes para a aplicação foi desenvolvido em MySQL através do MySQL Workbench.
 
 ### 1. Instalando o MySQL
 Primeiro, certifique-se de que o MySQL esteja instalado no seu sistema. Você pode fazer o download do MySQL no site oficial [MySQL Downloads](https://dev.mysql.com/downloads/).
