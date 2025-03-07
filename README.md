@@ -2,7 +2,18 @@
 
 ## [Clique aqui](https://www.youtube.com/watch?v=ukg6h2oIvyk) para acessar o vídeo de demonstração do Sistema
 
-# Como Criar e Implementar um Banco de Dados com MySQL e Armazenar Dados em Formato de Markdown
+Na primeira etapa deste projeto realizamos a prototipação do sistema e também a criação das personas e das jornadas de usuário correspondentes a cada uma delas. Como grupo, optamos por desenvolver a jornada dos pacientes que são exemplificadas através da seguinte persona:
+
+- **Maria da Silva**
+    - Idade: 45 anos
+    - Profissão: Dona de casa
+    - Localização: Região Metropolitana
+    - Necessidade: Ter acesso digital a encaminhamentos médicos, receitas e agendamentos de consultas, sem depender de papéis que possam ser perdidos.
+    - Comportamento: Usa o smartphone para se comunicar, mas tem dificuldades com aplicativos complexos.
+
+Dessa forma, baseado na descrição acima e no protótipo que desenvolvemos, podemos afirmar que o sistema desenvolvido **atende a etapa anterior com sucesso** sem que fosse preciso adicionar novas features ou retirar quaisquer funcionalidades idealizadas na primeira etapa.
+
+## Como Criar e Implementar um Banco de Dados com MySQL e Armazenar Dados em Formato de Markdown
 
 ## 1. Instalando o MySQL
 Primeiro, certifique-se de que o MySQL esteja instalado no seu sistema. Você pode fazer o download do MySQL no site oficial [MySQL Downloads](https://dev.mysql.com/downloads/).
@@ -10,7 +21,7 @@ Primeiro, certifique-se de que o MySQL esteja instalado no seu sistema. Você po
 ## 2. Configurando o Banco de Dados
 Depois de instalar o MySQL, inicie o servidor MySQL e conecte-se ao banco de dados usando o cliente MySQL:#
 
-# CREATE DATABASE meu_banco_de_dados;
+## CREATE DATABASE meu_banco_de_dados;
 USE meu_banco_de_dados;
 
 CREATE TABLE minha_tabela (
