@@ -40,12 +40,13 @@ VALUES ('João Silva', 28, 'joao.silva@example.com'),
 | 2  | Maria Oliveira | 32  | maria.oliveira@example.com |
 | 3  | Pedro Souza  | 45    | pedro.souza@example.com |
 
+---
+
 # Hospedagem de Banco de Dados MySQL na AWS RDS
 
 Hospedando um banco de dados MySQL na AWS RDS (Relational Database Service), desde a criação da instância até a conexão com aplicações externas.
----
 
-## Passo a Passo
+## Passo a Passo:
 
 ### 1. Criar Instância RDS
 1. Acesse o **AWS Console** e vá para o serviço **RDS**.
