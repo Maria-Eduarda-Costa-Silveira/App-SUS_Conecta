@@ -72,6 +72,11 @@ Para executar o projeto na máquina local, é necessário configurar um servidor
 - Abra um navegador e acesse: 
   `http://localhost/App-SUS-main`
 
+#### 6. Clique em `Login.php` 
+
+![Repositório Aberto no XAMPP](https://drive.google.com/uc?export=view&id=1Gv0DBRivoXQRb8RO5Cnwi5u3goqaNa7i)
+
+### 💡 Dica: Acesse o Sistema com o Login da nossa persona. CPF: 12345678912 e Senha: 123456.
 ---
 
 ## Detalhamento técnico: Hospedagem do Banco de Dados MySQL na AWS RDS ☁️ 
