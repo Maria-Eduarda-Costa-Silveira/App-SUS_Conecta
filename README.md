@@ -1,8 +1,8 @@
-# APP SUS - Documentação
+# APP SUS - Documentação 📂
 
 ## [Clique aqui](https://www.youtube.com/watch?v=ukg6h2oIvyk) para acessar o vídeo de demonstração do Sistema
 
-## 1. Contextualização
+## 1. Contextualização 🔎
 Na primeira etapa deste projeto realizamos a prototipação do sistema e também a criação das personas e das jornadas de usuário correspondentes a cada uma delas. Como grupo, optamos por desenvolver a jornada dos pacientes que são exemplificadas através da seguinte persona:
 
 - **Maria da Silva**
@@ -12,47 +12,69 @@ Na primeira etapa deste projeto realizamos a prototipação do sistema e também
     - Necessidade: Ter acesso digital a encaminhamentos médicos, receitas e agendamentos de consultas, sem depender de papéis que possam ser perdidos.
     - Comportamento: Usa o smartphone para se comunicar, mas tem dificuldades com aplicativos complexos.
 
-Dessa forma, baseado na descrição acima e no protótipo que desenvolvemos, podemos afirmar que o sistema desenvolvido **atende a etapa anterior com sucesso** sem que fosse preciso adicionar novas features ou retirar quaisquer funcionalidades idealizadas na primeira etapa.
+#### Dessa forma, baseado na descrição acima e no protótipo que desenvolvemos, podemos afirmar que o sistema desenvolvido **atende a etapa anterior com sucesso** sem que fosse preciso adicionar novas features ou retirar quaisquer funcionalidades idealizadas na primeira etapa.
 
-## 2. Front-end
+## 2. Front-end 💻
 
-Seguindo o design construído na primeira etpa através do Figma, o front-end foi desenvolvido utilizando HTML para a estrutura da página e CSS para a estilização. Garantindo uma interface visualmente agradável e responsiva para o usuário.
+Seguindo o design construído na primeira etpa através do `Figma`, o front-end foi desenvolvido utilizando `HTML` para a estrutura da página e `CSS` para a estilização. Garantindo uma interface visualmente agradável e responsiva para o usuário.
 
-## 3. Back-end 
+## 3. Back-end </>
 
-O back-end foi construído com PHP, pois foi a linguagem de programação que o grupo se sentiu mais confortável em utulizar. O PHP é responsável por processar os dados e interagir com o banco de dados, enviando os dados fornecidos pelos usuários no cadastro para o BD e "chamando" esses dados quando uma seção é iniciada.
+O back-end foi construído com `PHP`, pois foi a linguagem de programação que o grupo se sentiu mais confortável em utilizar. O `PHP` é responsável por processar os dados e interagir com o banco de dados, enviando os dados fornecidos pelos usuários no cadastro para o BD e "chamando" esses dados quando uma seção é iniciada.
 
-## 4. Criação do Banco de Dados
-O Banco de Dados que armazena e envia os dados dos pacientes para a aplicação foi desenvolvido em MySQL através do MySQL Workbench.
+---
+## 4. Banco de Dados 🛢
 
-### 1. Instalando o MySQL
-Primeiro, certifique-se de que o MySQL esteja instalado no seu sistema. Você pode fazer o download do MySQL no site oficial [MySQL Downloads](https://dev.mysql.com/downloads/).
+O Banco de Dados `db_app-sus` que recebe e armazena os dados dos pacientes vindos do sistema foi desenvolvido em MySQL através do MySQL Workbench.
 
-### 2. Configurando o Banco de Dados
-Depois de instalar o MySQL, inicie o servidor MySQL e conecte-se ao banco de dados usando o cliente MySQL:#
+O Banco de dados possui 4 tabelas:
 
-### CREATE DATABASE meu_banco_de_dados;
-USE meu_banco_de_dados;
+1. `tbl_pacientes`
+2. `tbl_agendamentos`
+3. `tbl_exames`
+4. `tbl_receitas`
 
-CREATE TABLE minha_tabela (
-    id INT AUTO_INCREMENT PRIMARY KEY,
-    nome VARCHAR(100),idade INT,email VARCHAR(100)
-);
-### INSERT INTO minha_tabela (nome, idade, email)
-VALUES ('João Silva', 28, 'joao.silva@example.com'),
-       ('Maria Oliveira', 32, 'maria.oliveira@example.com'),
-       ('Pedro Souza', 45, 'pedro.souza@example.com');
-### SELECT * FROM minha_tabela;
-### Markdown
-| ID | Nome         | Idade | Email                  |
-|----|--------------|-------|------------------------|
-| 1  | João Silva   | 28    | joao.silva@example.com |
-| 2  | Maria Oliveira | 32  | maria.oliveira@example.com |
-| 3  | Pedro Souza  | 45    | pedro.souza@example.com |
+Os valores da `tbl_pacientes` são inseridos sempre que um paciente realiza o seu cadastro. Já os dados das demais tabelas são adicionadas por um usuário com perfil de administrador (médico(a), enfermeiros(as), entre outros). Como desenvolvemos apenas a jornada do paciente, adicionamos os dados diretamente nas tabelas de forma manual por meio de queries em `SQL`.
 
 ---
 
-## 5. Hospedagem de Banco de Dados MySQL na AWS RDS
+## 5. Configuração do Servidor Apache para Execução Local 🌐
+
+Para executar o projeto na máquina local, é necessário configurar um servidor web para dar suporte ao PHP e interagir com o Banco de Dados MySQL. O **Apache** (incluído no XAMPP) é a solução que encontramos para esse ambiente de desenvolvimento.
+
+## Passo a Passo para Configuração
+
+#### 1. Baixar o XAMPP
+- Acesse o site oficial [XAMPP](https://www.apachefriends.org/pt_br/index.html).
+- Faça o download da versão compatível com seu sistema operacional (Windows, Linux ou macOS).
+
+#### 2. Colocar o Projeto na Pasta `htdocs`
+- Após instalar o XAMPP, localize a pasta de instalação de acordo com o sistema operacional:
+  - **Windows**: `C:\xampp\htdocs\`
+  - **Linux**: `/opt/lampp/htdocs/`
+  - **macOS**: `/Applications/XAMPP/htdocs/`
+- Baixe este projeto no seu computador.
+- Copie a pasta do projeto (que está dentro da pasta .zip) para dentro de `htdocs`.  
+  **Exemplo**:  
+  Quando é feito o download a pasta se chama `App-SUS-main`, o caminho final será `C:\xampp\htdocs\App-SUS-main`.
+
+#### 3. Abrir o XAMPP Control Panel
+- Inicie o **XAMPP Control Panel**:
+  - No Windows: Use o atalho na área de trabalho ou pesquise por "XAMPP Control Panel".
+  - No Linux execute o comando `sudo /opt/lampp/xampp start`.
+  - No macOS abra o aplicativo XAMPP.
+
+#### 4. Ligar o Apache
+- No XAMPP Control Panel, clique no botão **Start** ao lado de "Apache" para iniciar o servidor.
+- Como o projeto **não utiliza** um Banco de Dados local, não é necessário iniciar o **MySQL**.
+
+#### 5. Acessando o Projeto
+- Abra um navegador e acesse: 
+  `http://localhost/App-SUS-main`
+
+---
+
+## Detalhamento técnico: Hospedagem do Banco de Dados MySQL na AWS RDS ☁️ 
 Para que qualquer pessoa que possa acessar esse sistema sem problemas, decidimos hospedar o banco de dados na nuvem através da Amazon Web Services (AWS). Para que isso fosse possível seguimos os seguintes passos:
 
 ### 1. Criar Instância RDS
@@ -85,43 +107,13 @@ Para que qualquer pessoa que possa acessar esse sistema sem problemas, decidimos
 3. Teste a conexão e salve.
 
 ### 4. Conectar Aplicação PHP
-Para conectar o sistema ao novo banco de dados, foi necessário trocar as credenciais antigas (do BD local) para as novas (do BD hospedado) na página 'dp.php'.
+Para conectar o sistema ao novo banco de dados, foi necessário trocar as credenciais antigas (do BD local) para as novas (do BD hospedado) na página `dp.php`.
 
 ---
+## Nosso time 👥
 
-## 6. Configuração do Servidor Apache para Execução Local
-
-Para executar o projeto em uma máquina local, é necessário configurar um servidor web que suporte PHP e interaja com o Banco de Dados MySQL. O **Apache** (incluído no XAMPP) é a solução que encontramos para esse ambiente de desenvolvimento.
-
-## Passo a Passo para Configuração
-
-#### 1. Baixar o XAMPP
-- Acesse o site oficial [XAMPP](https://www.apachefriends.org/pt_br/index.html).
-- Faça o download da versão compatível com seu sistema operacional (Windows, Linux ou macOS).
-
-#### 2. Colocar o Projeto na Pasta `htdocs`
-- Após instalar o XAMPP, localize a pasta de instalação de acordo com o sistema operacional:
-  - **Windows**: `C:\xampp\htdocs\`
-  - **Linux**: `/opt/lampp/htdocs/`
-  - **macOS**: `/Applications/XAMPP/htdocs/`
-- Copie a pasta do projeto para dentro de `htdocs`.  
-  **Exemplo**:  
-  Como o projeto se chama `App-SUS`, o caminho final será `C:\xampp\htdocs\App-SUS`.
-
-#### 3. Abrir o XAMPP Control Panel
-- Inicie o **XAMPP Control Panel**:
-  - No Windows: Use o atalho na área de trabalho ou pesquise por "XAMPP Control Panel".
-  - No Linux execute o comando `sudo /opt/lampp/xampp start`.
-  - No macOS abra o aplicativo XAMPP.
-
-#### 4. Ligar o Apache
-- No XAMPP Control Panel, clique no botão **Start** ao lado de "Apache" para iniciar o servidor.
-- Como o projeto utiliza um Banco de Dados local, inicie também o **MySQL**.
-
-#### 5. Acessando o Projeto
-- Abra um navegador e acesse: 
-  `http://localhost/App-SUS`
-
-  ---
-
-  
+- Maria Eduarda Costa Silveira
+- João Paulo Rodrigues dos Santos
+- Lucas Aparecido de Assis Gonçalves
+- Héctor Dimitri Pereira dos Santos
+- Dimitri Espínola dos Santos
