@@ -1,4 +1,5 @@
 <?php
+
     session_start();
     //print_r($_SESSION);
 
@@ -27,6 +28,7 @@
         $nome = "Paciente"; // Nome padrão caso algo dê errado
     }
 ?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
