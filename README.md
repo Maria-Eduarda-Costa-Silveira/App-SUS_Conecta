@@ -88,3 +88,40 @@ Para que qualquer pessoa que possa acessar esse sistema sem problemas, decidimos
 Para conectar o sistema ao novo banco de dados, foi necessário trocar as credenciais antigas (do BD local) para as novas (do BD hospedado) na página 'dp.php'.
 
 ---
+
+## 6. Configuração do Servidor Apache para Execução Local
+
+Para executar o projeto em uma máquina local, é necessário configurar um servidor web que suporte PHP e interaja com o Banco de Dados MySQL. O **Apache** (incluído no XAMPP) é a solução que encontramos para esse ambiente de desenvolvimento.
+
+## Passo a Passo para Configuração
+
+#### 1. Baixar o XAMPP
+- Acesse o site oficial [XAMPP](https://www.apachefriends.org/pt_br/index.html).
+- Faça o download da versão compatível com seu sistema operacional (Windows, Linux ou macOS).
+
+#### 2. Colocar o Projeto na Pasta `htdocs`
+- Após instalar o XAMPP, localize a pasta de instalação de acordo com o sistema operacional:
+  - **Windows**: `C:\xampp\htdocs\`
+  - **Linux**: `/opt/lampp/htdocs/`
+  - **macOS**: `/Applications/XAMPP/htdocs/`
+- Copie a pasta do projeto para dentro de `htdocs`.  
+  **Exemplo**:  
+  Como o projeto se chama `App-SUS`, o caminho final será `C:\xampp\htdocs\App-SUS`.
+
+#### 3. Abrir o XAMPP Control Panel
+- Inicie o **XAMPP Control Panel**:
+  - No Windows: Use o atalho na área de trabalho ou pesquise por "XAMPP Control Panel".
+  - No Linux execute o comando `sudo /opt/lampp/xampp start`.
+  - No macOS abra o aplicativo XAMPP.
+
+#### 4. Ligar o Apache
+- No XAMPP Control Panel, clique no botão **Start** ao lado de "Apache" para iniciar o servidor.
+- Como o projeto utiliza um Banco de Dados local, inicie também o **MySQL**.
+
+#### 5. Acessando o Projeto
+- Abra um navegador e acesse: 
+  `http://localhost/App-SUS`
+
+  ---
+
+  
