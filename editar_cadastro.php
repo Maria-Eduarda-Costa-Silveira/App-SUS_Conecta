@@ -38,7 +38,7 @@
         <p class="subtitle">Mantenha seus dados sempre atualizados.</p>
         
         <form action="update.php" method="POST" id="register-form">
-            <input type="hidden" name="cpf" value="<?php echo $cpf ?>">
+            
             <input type="text" id="first-name" name="nome" class="input-field" placeholder="Nome" value="<?php echo $nome ?>">
             <input type="text" id="last-name" name="sobrenome" class="input-field" placeholder="Sobrenome" value="<?php echo $sobrenome ?>">
             <input type="email" id="email" name="email" class="input-field" placeholder="E-mail" value="<?php echo $email ?>">
