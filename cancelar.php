@@ -1,6 +1,5 @@
 <?php
-    session_start();
-    include_once('db.php');
+    
 
     if(isset($_GET['id'])) {
         $id_agendamento = $_GET['id'];
