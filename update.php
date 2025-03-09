@@ -1,4 +1,8 @@
 <?php
+    session_start();
+    include_once('db.php');
+
+    $logado = $_SESSION['cpf'];
 
     if(isset($_POST['update']))
     {
