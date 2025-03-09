@@ -12,7 +12,11 @@
     $logado = $_SESSION['cpf'];
 
     // Consulta para buscar o nome do usuário no banco de dados
-    
+    $sql = "SELECT tbl_exames.nome_exame, tbl_exames.data_exame
+        FROM tbl_exames
+        INNER JOIN tbl_pacientes ON tbl_exames.cpf_paciente = tbl_pacientes.cpf
+        WHERE tbl_pacientes.cpf = '$logado'
+        ORDER BY tbl_exames.data_exame DESC";
 
     $result = $conn->query($sql);
 ?>
