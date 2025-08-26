@@ -39,6 +39,7 @@
 </head>
 <body>
     <div class="header">
+        <img src="icones\logo_reduzida.png" alt="" height="50px" width="50px">
         <?php 
             echo "<span class='user-greeting'>Olá, $nome</span>"; 
         ?>
