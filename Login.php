@@ -37,7 +37,8 @@
 </head>
 <body id="body-log">
     <div class="container">
-        <h2 class="title">Bem-vindo</h2>
+        <h2 class="title">Bem-vindo ao</h2>
+        <img src="icones/logo.png" alt="" height="130px" width="300px">
         <p class="subtitle">Faça login para continuar</p>
         
         <form action="testLogin.php" method="POST" id="login-form">
