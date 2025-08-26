@@ -1,7 +1,7 @@
 <?php
-    $servername = "db-app-sus.c38oyqkkyjym.us-east-1.rds.amazonaws.com"; // Altere se necessário
-    $username = "admin"; // Altere se necessário
-    $password = "ASTzysV0xAMgszFYLiNe"; // Altere se necessário
+    $servername = "34.42.46.107"; // Altere se necessário
+    $username = "root"; // Altere se necessário
+    $password = ',0BQ^2D"72Ei-/V;'; // Altere se necessário
     $dbname = "db_app-sus";
 
     // Criar conexão
