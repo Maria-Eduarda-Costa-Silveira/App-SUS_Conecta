@@ -5,12 +5,12 @@
 ## 1. Contextualização 🔎
 Na primeira etapa deste projeto realizamos a prototipação do sistema e também a criação das personas e das jornadas de usuário correspondentes a cada uma delas. Como grupo, optamos por desenvolver a jornada dos pacientes que são exemplificadas através da seguinte persona:
 
-- **Maria da Silva**
-    - Idade: 45 anos
-    - Profissão: Dona de casa
-    - Localização: Região Metropolitana
-    - Necessidade: Ter acesso digital a encaminhamentos médicos, receitas e agendamentos de consultas, sem depender de papéis que possam ser perdidos.
-    - Comportamento: Usa o smartphone para se comunicar, mas tem dificuldades com aplicativos complexos.
+- **Antônio Santos**
+    - Idade: 65 anos
+    - Profissão: Aposentado
+    - Localização: Zona rural
+    - Necessidade: Acompanhar os resultados de exames, agendamentos de consultas e informações sobre medicamentos de forma simples, devido à distância dos centros de saúde.
+    - Comportamento: Usa um celular básico e conta com a ajuda de familiares para navegar em aplicativos, sendo relutante em lidar com tecnologia sem suporte
 
 #### Dessa forma, baseado na descrição acima e no protótipo que desenvolvemos, podemos afirmar que o sistema desenvolvido **atende a etapa anterior com sucesso** sem que fosse preciso adicionar novas features ou retirar quaisquer funcionalidades idealizadas na primeira etapa.
 
@@ -76,7 +76,7 @@ Para executar o projeto na máquina local, é necessário configurar um servidor
 
 ![Repositório Aberto no XAMPP](https://drive.google.com/uc?export=view&id=1Gv0DBRivoXQRb8RO5Cnwi5u3goqaNa7i)
 
-### 💡 Dica: Acesse o Sistema com o Login da nossa persona. CPF: 12345678912 e Senha: 123456.
+### 💡 Dica: Acesse o Sistema com o Login da nossa persona. CPF: 12345678915 e Senha: 123456
 ---
 
 ## Detalhamento técnico: Hospedagem do Banco de Dados MySQL na AWS RDS ☁️ 
