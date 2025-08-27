@@ -32,7 +32,7 @@ Para executar o projeto na máquina local, é necessário configurar um servidor
 - Baixe este projeto no seu computador.
 - Copie a pasta do projeto (que está dentro da pasta .zip) para dentro de `htdocs`.  
   **Exemplo**:  
-  Quando é feito o download a pasta se chama `App-SUS-main`, o caminho final será `C:\xampp\htdocs\App-SUS-main`.
+  Quando é feito o download a pasta se chama `App-SUS_Conecta-main`, o caminho final será `C:\xampp\htdocs\App-SUS_Conecta-main`.
 
 #### 3. Abrir o XAMPP Control Panel
 - Inicie o **XAMPP Control Panel**:
@@ -80,40 +80,15 @@ Os valores da `tbl_pacientes` são inseridos sempre que um paciente realiza o se
 
 ---
 
-## Detalhamento técnico: Hospedagem do Banco de Dados MySQL na AWS RDS ☁️ 
-Para que qualquer pessoa que possa acessar esse sistema sem problemas, decidimos hospedar o banco de dados na nuvem através da Amazon Web Services (AWS). Para que isso fosse possível seguimos os seguintes passos:
+## Detalhamento técnico: Deploy do Banco de Dados MySQL no Google Cloud (GCP) ☁️ 
+Para que qualquer pessoa que possa acessar esse sistema sem problemas, decidimos hospedar o banco de dados na nuvem através do Google Cloud. Para que isso fosse possível seguimos os seguintes passos:
 
-### 1. Criar Instância RDS
-1. No site da AWS, acesse o **AWS Console** e vá para o serviço **RDS**.
-3. Clique em **Create database** e selecione **MySQL**.
-4. Escolha a opção **Free Tier** (se disponível) para usar o nível gratuito.
-5. Defina:
-    - **DB Identifier**: Nome único para o banco.
-    - **Master Username** e **Password**: Credenciais de acesso ao banco.
-5. Em **Connectivity**, ative **Public access** para permitir conexões externas e selecione um **Security Group**.
-6. Clique em **Create database** e aguarde a inicialização da instância.
-
-### 2. Configurar Permissões de Acesso
-1. Acesse o serviço **EC2** no AWS Console.
-2. Vá até **Security Groups** e localize o grupo de segurança associado ao RDS.
-3. Edite as **Inbound Rules**:
-- **Type**: MySQL/Aurora
-- **Protocol**: TCP
-- **Port**: 3306
-- **Source**: `0.0.0.0/0` (menos seguro, permite acesso de qualquer IP).
-4. Salve as alterações.
-
-### 3. Conectar ao Banco
-###  MySQL Workbench
-1. Abra o MySQL Workbench e adicione uma nova conexão.
-2. Preencha os campos:
-- **Hostname**: Endereço do RDS (encontrado no AWS RDS Dashboard).
-- **Port**: 3306
-- **Username** e **Password**: Definidos na criação do banco.
-3. Teste a conexão e salve.
-
-### 4. Conectar Aplicação PHP
-Para conectar o sistema ao novo banco de dados, foi necessário trocar as credenciais antigas (do BD local) para as novas (do BD hospedado) na página `dp.php`.
+1. Criar Instância
+2. Exportar os dados do Banco de Dados local
+3. Criar um Bucket no GCP
+4. Importar esse Banco de Dados no Bucket
+5. Importar o Bucket na Instância
+7. Trocar as credenciais antigas (do BD local) pelas novas (do BD hospedado) na página `dp.php`
 
 ---
 ## Nosso time 👥
