@@ -52,7 +52,7 @@ Para executar o projeto na máquina local, é necessário configurar um servidor
 
 ![Repositório Aberto no XAMPP](https://drive.google.com/uc?export=view&id=1Gv0DBRivoXQRb8RO5Cnwi5u3goqaNa7i)
 
-# 💡 Dica: Acesse o Sistema com o Login da nossa persona. CPF: 12345678915 e Senha: 123456
+### 💡 Dica: Acesse o Sistema com o Login da nossa persona. CPF: 12345678915 e Senha: 123456
 ---
 ## Detalhamento Técnico: Front-end, Back-end e Banco de Dados
 
