@@ -14,31 +14,7 @@ Na primeira etapa deste projeto realizamos a prototipação do sistema e também
 
 #### Dessa forma, baseado na descrição acima e no protótipo que desenvolvemos, podemos afirmar que o sistema desenvolvido **atende a etapa anterior com sucesso** sem que fosse preciso adicionar novas features ou retirar quaisquer funcionalidades idealizadas na primeira etapa.
 
-## 2. Front-end 💻
-
-Seguindo o design construído na primeira etpa através do `Figma`, o front-end foi desenvolvido utilizando `HTML` para a estrutura da página e `CSS` para a estilização. Garantindo uma interface visualmente agradável e responsiva para o usuário.
-
-## 3. Back-end </>
-
-O back-end foi construído com `PHP`, pois foi a linguagem de programação que o grupo se sentiu mais confortável em utilizar. O `PHP` é responsável por processar os dados e interagir com o banco de dados, enviando os dados fornecidos pelos usuários no cadastro para o BD e "chamando" esses dados quando uma seção é iniciada.
-
----
-## 4. Banco de Dados 🛢
-
-O Banco de Dados `db_app-sus` que recebe e armazena os dados dos pacientes vindos do sistema foi desenvolvido em MySQL através do MySQL Workbench.
-
-O Banco de dados possui 4 tabelas:
-
-1. `tbl_pacientes`
-2. `tbl_agendamentos`
-3. `tbl_exames`
-4. `tbl_receitas`
-
-Os valores da `tbl_pacientes` são inseridos sempre que um paciente realiza o seu cadastro. Já os dados das demais tabelas são adicionadas por um usuário com perfil de administrador (médico(a), enfermeiros(as), entre outros). Como desenvolvemos apenas a jornada do paciente, adicionamos os dados diretamente nas tabelas de forma manual por meio de queries em `SQL`.
-
----
-
-## 5. Configuração do Servidor Apache para Execução Local 🌐
+## 2. Configuração do Servidor Apache para Execução Local 🌐
 
 Para executar o projeto na máquina local, é necessário configurar um servidor web para dar suporte ao PHP e interagir com o Banco de Dados MySQL. O **Apache** (incluído no XAMPP) é a solução que encontramos para esse ambiente de desenvolvimento.
 
@@ -76,7 +52,32 @@ Para executar o projeto na máquina local, é necessário configurar um servidor
 
 ![Repositório Aberto no XAMPP](https://drive.google.com/uc?export=view&id=1Gv0DBRivoXQRb8RO5Cnwi5u3goqaNa7i)
 
-### 💡 Dica: Acesse o Sistema com o Login da nossa persona. CPF: 12345678915 e Senha: 123456
+# 💡 Dica: Acesse o Sistema com o Login da nossa persona. CPF: 12345678915 e Senha: 123456
+---
+## Detalhamento Técnico: Front-end, Back-end e Banco de Dados
+
+## 1. Front-end 💻
+
+Seguindo o design construído na primeira etpa através do `Figma`, o front-end foi desenvolvido utilizando `HTML` para a estrutura da página e `CSS` para a estilização. Garantindo uma interface visualmente agradável e responsiva para o usuário.
+
+## 2. Back-end </>
+
+O back-end foi construído com `PHP`, pois foi a linguagem de programação que o grupo se sentiu mais confortável em utilizar. O `PHP` é responsável por processar os dados e interagir com o banco de dados, enviando os dados fornecidos pelos usuários no cadastro para o BD e "chamando" esses dados quando uma seção é iniciada.
+
+---
+## 3. Banco de Dados 🛢
+
+O Banco de Dados `db_app-sus` que recebe e armazena os dados dos pacientes vindos do sistema foi desenvolvido em MySQL através do MySQL Workbench.
+
+O Banco de dados possui 4 tabelas:
+
+1. `tbl_pacientes`
+2. `tbl_agendamentos`
+3. `tbl_exames`
+4. `tbl_receitas`
+
+Os valores da `tbl_pacientes` são inseridos sempre que um paciente realiza o seu cadastro. Já os dados das demais tabelas são adicionadas por um usuário com perfil de administrador (médico(a), enfermeiros(as), entre outros). Como desenvolvemos apenas a jornada do paciente, adicionamos os dados diretamente nas tabelas de forma manual por meio de queries em `SQL`.
+
 ---
 
 ## Detalhamento técnico: Hospedagem do Banco de Dados MySQL na AWS RDS ☁️ 
