@@ -1,5 +1,5 @@
 <?php
-    if (isset($_POST['submit']))
+    i (isset($_POST['submit']))
     {
         /*print_r($_POST['cpf']);
         print_r($_POST['nome']);
