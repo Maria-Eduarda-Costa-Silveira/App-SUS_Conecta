@@ -32,7 +32,7 @@
     }
     else {
 
-        //Não acessa
+        //Não acess
         header('Location: Login.php');
     }
 
