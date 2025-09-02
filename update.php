@@ -25,7 +25,7 @@
         if ($result) {
             header('Location: principal.php');
         } else {
-            echo "Erro ao atualizar o cadastro.";
+            echo "Erro ao atualizar o cadastro";
         }
     }
 ?>
