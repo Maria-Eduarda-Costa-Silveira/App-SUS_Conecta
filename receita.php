@@ -9,7 +9,7 @@
         header('Location: Login.php');
     }
 
-    $logado = $_SESSION['cpf'];
+    $logado = $_SESSION['cpf']
 
     // Consulta para buscar o nome do usuário no banco de dados
     $sql = "SELECT tbl_receitas.nome_medico, tbl_receitas.data_criacao
