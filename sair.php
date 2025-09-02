@@ -3,4 +3,4 @@
     unset($_SESSION['cpf']);
     unset($_SESSION['senha']);
     header("Location: Login.php");
-?
+?>
