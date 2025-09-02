@@ -16,7 +16,7 @@
         FROM tbl_agendamentos
         INNER JOIN tbl_pacientes ON tbl_agendamentos.cpf_paciente = tbl_pacientes.cpf
         WHERE tbl_pacientes.cpf = '$logado'
-        ORDER BY tbl_agendamentos.data_agendamento ASC";
+        ORDER BY tbl_agendamentos.data_agendamento AC";
 
     $result = $conn->query($sql);
 ?>
