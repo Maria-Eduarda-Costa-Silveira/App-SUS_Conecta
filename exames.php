@@ -1,5 +1,5 @@
 <?php
-    session_start()
+    session_start();
     include_once('db.php');
 
     if((!isset($_SESSION['cpf']) == true) and (!isset($_SESSION['senha']) == true))
