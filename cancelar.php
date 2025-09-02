@@ -16,7 +16,7 @@
             exit();
         } else {
             // Tratamento de erro, se necessário
-            echo "Erro ao cancelar o agendamento."
+            echo "Erro ao cancelar o agendamento.";
         }
     } else {
         // Caso o parâmetro id não seja fornecido na URL
