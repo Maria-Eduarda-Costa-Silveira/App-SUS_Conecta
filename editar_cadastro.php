@@ -9,7 +9,7 @@
 
     $result = $conn->query($sql);
 
-    if($result->num_rows > 0)
+    if($result->num_rows > 0) 
     {
         while($user_data = mysqli_fetch_assoc($result))
         {
