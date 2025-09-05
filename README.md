@@ -1,7 +1,5 @@
 # APP SUS - Documentação 📂
 
-## [Clique aqui](https://www.youtube.com/watch?v=ukg6h2oIvyk) para acessar o vídeo de demonstração do Sistema
-
 ## 1. Contextualização 🔎
 Na primeira etapa deste projeto realizamos a prototipação do sistema e também a criação das personas e das jornadas de usuário correspondentes a cada uma delas. Como grupo, optamos por desenvolver a jornada dos pacientes que são exemplificadas através da seguinte persona:
 
@@ -46,11 +44,11 @@ Para executar o projeto na máquina local, é necessário configurar um servidor
 
 #### 5. Acessando o Projeto
 - Abra um navegador e acesse: 
-  `http://localhost/App-SUS-main`
+  `http://localhost/App-SUS_Conecta-main`
 
 #### 6. Clique em `Login.php` 
 
-![Repositório Aberto no XAMPP](https://drive.google.com/uc?export=view&id=1Gv0DBRivoXQRb8RO5Cnwi5u3goqaNa7i)
+![Repositório Aberto no XAMPP](https://drive.google.com/uc?export=view&id=17ErQA0RfH9oJczwf6-CR3X-8jBZHNNlF)
 
 ### 💡 Dica: Acesse o Sistema com o Login da nossa persona. CPF: 12345678915 e Senha: 123456
 ---
